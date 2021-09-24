@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter b");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter c");
+            int c = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter d");
+            int d = int.Parse(Console.ReadLine());
+            Console.WriteLine("Answer:");
+            double firstPart = (10.0 * a + 10.0 * b);
+            double secondPart = (a + b + 10.0 * a * a + b * b * b);
+            int thirdPart = c / (d + d * d);
+            double fourthPart = (a * a + b * b) / (a * a - b * b);
+            double fifthPart = (11.0 * a + b) / (a + b);
+            double sixthPart = (a + b) / (a - b);
+            double seventhPart = (c + d) / (c - d) / (c + 10.0 * d);
+            Console.WriteLine((firstPart / secondPart + thirdPart) / (fourthPart + fifthPart + sixthPart) / seventhPart);
+        }
+    }
+}
+
